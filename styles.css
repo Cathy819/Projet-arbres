@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.fiche-container {
+  background: white;
+  border: 2px solid #ccc;
+  padding: 30px 40px;
+  width: 750px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.header-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #2e7d32;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 150%;
+  height: 120%;
+  object-fit: cover;
+  padding-right: 35px;
+}
+
+.logo espace-droite img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.institution {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-size: medium;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.tree-photo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tree-photo img {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#treeName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#scientificName {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+.no-data {
+  text-align: center;
+  color: #555;
+  margin-top: 40px;
+}
+
+.tree-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.info-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background: #f9fff9;
+}
+
+.info-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.label {
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.value {
+  color: #333;
+}
+
+.badge.conservation {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiche descriptive de l'arbre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="fiche-container">
+    <!-- En-tête avec logos et institution -->
+    <header class="header-logos">
+      <div class="logo espace-gauche">
+        <img src="logos/logo-gauche.png" alt="Logo gauche" />
+      </div>
+      <h2 class="institution">Cantonnement des eaux et forêts de Daloa</h2>
+      <div class="logo espace-droite">
+        <img src="logos/logo-droite.png" alt="Logo droite" />
+      </div>
+    </header>
+
+    <!-- Photo de l'arbre -->
+    <div class="tree-photo">
+      <img id="treeImage" src="images/default.jpg" alt="Photo de l'arbre" />
+    </div>
+
+    <!-- Nom et sous-titre -->
+    <div class="header">
+      <h1 id="treeName">Chargement...</h1>
+      <div class="subtitle" id="scientificName"></div>
+    </div>
+
+    <!-- Contenu dynamique -->
+    <div id="content">
+      <div class="no-data">
+        <div class="tree-icon">🌳</div>
+        <h2>Aucune donnée disponible</h2>
+        <p>Veuillez scanner un QR code valide pour afficher les informations de l'arbre.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2025 - Ministère des Forêts et Ressources Naturelles
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
